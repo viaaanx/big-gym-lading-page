@@ -1,0 +1,286 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.hero {
+    background-image: url(hero-gym.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 900px;
+    position: relative;
+    padding: 1px;
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+    z-index: 1;
+
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+}
+
+.hero-text {
+    max-width: 700px;
+    width: 100%;
+}
+
+.hero-text h2 {
+    line-height: 100%;
+    letter-spacing: 0px;
+    font-size: 100px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.hero-text-paragraphy {
+    max-width: 500px;
+    font-family: "Inter", sans-serif;
+    color: #ccc;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 30px;
+}
+
+.hero-text-hot {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    width: 34%;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #facc14;
+    padding: 8px 15px;
+    border-radius: 50px;
+    background-color: rgba(225, 225, 37, 0.1);
+    border: 1px solid #facc14;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.navbar li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.navbar a {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 16px;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: #facc14;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.button1 {
+    margin-top: 25px;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    background-color: #facc14;
+    width: 217.38px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 44px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button2 {
+    margin-top: 25px;
+    font-family: "Oswald", sans-serif;
+    border: 1px solid white;
+    padding: 15px;
+    width: 217.38px;
+    height: 44px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.diferencial{
+    color: white;
+    background-color: black;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 20px;
+}
+
+
+.diferencial h2{
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+
+.diferencial p{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 560px;
+    text-align: left;
+    color: #ccc;
+    margin-bottom: 0;
+}
+
+.diferencial h3{
+    font-family: "Oswald", sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.diferencial-content{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.diferencial-content article {
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.gym, .fit, .drink, .energy, .hours, .bairro{
+    background-color: #141414;
+}
+
+.alimentacao{
+    color: white;
+    background-color: #141414;
+    padding: 100px 0;
+}
+
+.alimentacao-header{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px auto;
+}
+
+.alimentacao-header h2{
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+}
+
+.alimentacao-header p{
+    color: #ccc;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    ;
+}
+
+.alimentacao-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 580px);
+    gap: 40px;
+    justify-content: center;
+}
+
+.alimentacao-photo{
+    position: relative;
+    height: 580px;
+    width: 580px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.alimentacao-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.alimentacao-overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+}
+
+.alimentacao-overlay h3{
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.alimentacao-overlay p{
+    font-family: "Inter", sans-serif;
+    color: #ccc;
+    margin-bottom: 5px;
+     line-height: 26px;
+    
+}
+
