@@ -4,45 +4,91 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    color: #ccc;
+}
+
+.section {
+    padding: 100px 20px;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px auto;
+}
+
+.section-subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #facc14;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.section-description {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ccc;
+}
+
 .section-hero {
     background-image: url(hero-gym.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     position: relative;
-    padding: 1px;
+    padding-top: 80px;
 }
 
-.section-hero:before {
+.section-hero::before {
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
     z-index: 1;
+    pointer-events: none;
 
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+
     position: relative;
     z-index: 2;
-    text-align: left;
 }
 
 .hero-content {
     max-width: 700px;
     width: 100%;
+    text-align: left;
+    margin: 0 auto;
 }
 
 .hero-title {
-    line-height: 100%;
+    line-height: 1;
     letter-spacing: 0px;
-    font-size: 100px;
+    font-size: 96px;
     color: white;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
@@ -98,7 +144,6 @@
     text-decoration: none;
     color: #ccc;
     font-size: 16px;
-    margin-right: 15px;
     text-transform: uppercase;
 }
 
@@ -116,25 +161,29 @@
     font-family: "Oswald", sans-serif;
     font-size: 18px;
     background-color: #facc14;
-    width: 217.38px;
-    text-align: center;
-    text-transform: uppercase;
+
+    min-width: 220px;
     height: 44px;
+
+    padding: 0 25px;
     border-radius: 5px;
 
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+
     color: black;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .btn-outline {
     margin-top: 25px;
     font-family: "Oswald", sans-serif;
     border: 1px solid white;
-    padding: 15px;
-    width: 217.38px;
+    padding: 0 25px;
+
+    min-width: 220px;
     height: 44px;
     font-size: 18px;
     border-radius: 5px;
@@ -142,124 +191,106 @@
     color: white;
     text-transform: uppercase;
 
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
 }
 
-#diferencial{
+.btn-primary,
+.btn-outline {
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-outline:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+.section-diferencial {
     color: white;
     background-color: black;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-    flex-direction: column;
-    padding: 100px 20px;
 }
 
 
-#diferencial h2{
-    text-align: center;
+.section-diferencial .section-title {
     margin-bottom: 60px;
-    font-family: "Oswald", sans-serif;
-    text-transform: uppercase;
-    font-size: 50px;
-    line-height: 100%;
-    letter-spacing: 0px;
-    margin-bottom: 20px;
 }
 
-#diferencial p{
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    line-height: 26px;
-    max-width: 560px;
-    text-align: left;
-    color: #ccc;
-    margin-bottom: 0;
-}
-
-#diferencial h3{
-    font-family: "Oswald", sans-serif;
-    text-align: left;
-    text-transform: uppercase;
-}
-
-.diferencial-content{
+.diferencial-grid {
     width: 100%;
     margin: 0 auto;
-    max-width: 1100px;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
-.diferencial-content article {
-    padding: 15px;
+.diferencial-item {
+    background-color: #141414;
+    padding: 25px;
     border-radius: 8px;
     text-align: left;
+    transition: 0.3s ease;
+    border: 1px solid #292929;
 }
 
-.gym, .fit, .drink, .energy, .hours, .bairro{
-    background-color: #141414;
-}
-
-#alimentacao{
-    color: white;
-    background-color: #141414;
-    padding: 100px 0;
-}
-
-.alimentacao-header{
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 80px auto;
-}
-
-.alimentacao-header h2{
-    text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
-    font-size: 50px;
-}
-
-.alimentacao-header p{
-    color: #ccc;
+.diferencial-item p {
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    ;
+    color: #ccc;
+    line-height: 26px;
 }
 
-.alimentacao-grid{
+.diferencial-item:hover {
+    transform: translateY(-5px);
+    border-color: #facc14;
+}
+
+.diferencial-item h3 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.section-alimentacao {
+    color: white;
+    background-color: #141414;
+}
+
+.alimentacao-grid {
     display: grid;
-    grid-template-columns: repeat(2, 580px);
+    grid-template-columns: repeat(2, 850px);
     gap: 40px;
     justify-content: center;
 }
 
-.alimentacao-photo{
+.alimentacao-photo {
     position: relative;
-    height: 580px;
-    width: 580px;
+    aspect-ratio: 1/1;
     overflow: hidden;
     border-radius: 12px;
+    width: 100%;
 }
 
-.alimentacao-photo img{
+.alimentacao-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.5s ease;
 }
 
-.alimentacao-overlay{
+.alimentacao-photo:hover img {
+    transform: scale(1.05);
+}
+
+.alimentacao-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
 
     display: flex;
     flex-direction: column;
@@ -267,21 +298,33 @@
     padding: 40px;
 }
 
-.alimentacao-overlay h3{
+.alimentacao-overlay h3 {
     font-family: "Oswald", sans-serif;
     font-size: 32px;
     margin-bottom: 15px;
 }
 
-.alimentacao-overlay p{
-    font-family: "Inter", sans-serif;
-    color: #ccc;
-    margin-bottom: 5px;
-     line-height: 26px;
-    
+.alimentacao-overlay ul {
+    list-style: none;
+    padding: 0;
 }
 
-.destaque{
+.alimentacao-overlay li {
+    font-family: "Inter", sans-serif;
+    color: #ccc;
+    margin-bottom: 6px;
+    line-height: 26px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.alimentacao-overlay li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
     color: #facc14;
 }
 
+.highlight {
+    color: #facc14;
+}

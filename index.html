@@ -4,24 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academia Big Gym em Joinville. Musculação completa, instrutores especializados, alimentação fit e planos acessíveis.">
+    <meta name="description"
+        content="Academia Big Gym em Joinville. Musculação completa, instrutores especializados, alimentação fit e planos acessíveis.">
     <title>Academia Big Gym</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
             <ul>
-                <li> <a href="#hero">Início </a></li>
-                <li> <a href="#diferencial">Diferenciais </a></li>
-                <li> <a href="#instrutores">Equipe </a></li>
-                <li> <a href="#planos">Planos </a></li>
-                <li> <a href="#localizacao">Localização </a></li>
-                <li> <a href="#contato">Contato </a></li>
+                <li> <a href="#hero">Início</a></li>
+                <li> <a href="#diferencial">Diferenciais</a></li>
+                <li> <a href="#estrutura">Estrutura</a></li>
+                <li> <a href="#planos">Planos</a></li>
+                <li> <a href="#feedback">Depoimentos</a></li>
+                <li> <a href="#localizacao">Localização</a></li>
             </ul>
         </nav>
     </header>
@@ -42,222 +47,296 @@
             </div>
         </section>
 
-        <section id="diferencial">
-            <div class="diferencial-text">
-                <h2>Nossos <span class="destaque">diferenciais</span></h2>
+        <section id="diferencial" class="section section-diferencial">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Por que escolher a Big Gym</p>
+                    <h2 class="section-title">Nossos <span class="highlight">diferenciais</span></h2>
+                </div>
+
+                <div class="diferencial-grid">
+                    <article class="diferencial-item">
+                        <h3>Musculação Completa</h3>
+                        <p>Equipamentos de qualidade para todos os grupos musculares. Halteres, barras, máquinas e
+                            anilhas
+                            para você evoluir no seu treino.</p>
+                    </article>
+                    <article class="diferencial-item">
+                        <h3>Comidas Fit Congeladas</h3>
+                        <p>Compre suas refeições fit aqui mesmo na academia. Marmitas equilibradas, prontas para
+                            aquecer e
+                            comer antes ou depois do treino.</p>
+                    </article>
+                    <article class="diferencial-item">
+                        <h3>Geladeira de Bebidas</h3>
+                        <p>Energéticos, água gelada, whey pronto para beber e outras opções. Tudo na geladeira
+                            pronto para
+                            você abastecer o shape.</p>
+                    </article>
+                    <article class="diferencial-item">
+                        <h3>Treino com Energia</h3>
+                        <p>Ambiente que motiva. Som alto, clima de treino pesado e galera focada. Aqui ninguém vem
+                            passear.
+                        </p>
+                    </article>
+                    <article class="diferencial-item">
+                        <h3>Horário Flexível</h3>
+                        <p>Aberto em horários que cabem na sua rotina. De manhã cedo até a noite, sempre tem horário
+                            para
+                            você treinar.</p>
+                    </article>
+                    <article class="diferencial-item">
+                        <h3>Instrutores Especializados</h3>
+                        <p>Aqui você não treina sozinho. Nossa equipe acompanha de perto cada aluno,
+                            motivando para que você evolua com segurança e resultado de verdade.</p>
+                    </article>
+                </div>
             </div>
-            <div class="diferencial-content">
-                <article class="gym">
-                    <h3>Musculação Completa</h3>
-                    <p>Equipamentos de qualidade para todos os grupos musculares. Halteres, barras, máquinas e anilhas
-                        para você evoluir no seu treino.</p>
-                </article>
-                <article class="fit">
-                    <h3>Comidas Fit Congeladas</h3>
-                    <p>Compre suas refeições fit aqui mesmo na academia. Marmitas equilibradas, prontas para aquecer e
-                        comer antes ou depois do treino.</p>
-                </article>
-                <article class="drink">
-                    <h3>Geladeira de Bebidas</h3>
-                    <p>Energéticos, água gelada, whey pronto para beber e outras opções. Tudo na geladeira pronto para
-                        você abastecer o shape.</p>
-                </article>
-                <article class="energy">
-                    <h3>Treino com Energia</h3>
-                    <p>Ambiente que motiva. Som alto, clima de treino pesado e galera focada. Aqui ninguém vem passear.
+        </section>
+
+        <section id="alimentacao" class="section section-alimentacao">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Exclusivo Big Gym</p>
+                    <h2 class="section-title">Alimentação e <span class="highlight">Hidratação</span></h2>
+                    <p class="section-description">Aqui você não precisa sair da academia para se alimentar bem. Temos
+                        comidas fit congeladas e uma
+                        geladeira completa com tudo que você precisa.</p>
+                </div>
+
+                <div class="alimentacao-grid">
+                    <div class="alimentacao-photo">
+                        <img src="images/fit-food.jpg" alt="Marmitas fit congeladas prontas para consumo">
+                        <div class="alimentacao-overlay">
+                            <h3>Comidas Fit <span class="highlight">Congeladas</span></h3>
+
+                            <ul>
+                                <li>Frango grelhado com arroz integral</li>
+                                <li>Carne com batata doce</li>
+                                <li>Peixe com legumes</li>
+                                <li>Omelete fit proteica</li>
+                                <li>Salada completa com proteina</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="alimentacao-photo">
+                        <img src="images/gym-area-4.jpg" alt="Geladeira com bebidas e suplementos">
+                        <div class="alimentacao-overlay">
+                            <h3>Geladeira de <span class="highlight">Bebidas</span></h3>
+
+                            <ul>
+                                <li>Energéticos (Monster, RedBull)</li>
+                                <li>Água mineral gelada</li>
+                                <li>Whey pronto para beber</li>
+                                <li>Isotônicos</li>
+                                <li>Água de coco</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="estrutura" class="section section-estrutura">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Conheça o Espaço</p>
+                    <h2 class="section-title">Nossa <span class="highlight">estrutura</span></h2>
+                    <p class="section-description">Uma academia de bairro com tudo que você precisa para evoluir na
+                        musculação. Confira nosso espaço. </p>
+                </div>
+                <div class="estrutura-grid">
+                    <img src="images/hero-gym.jpg" alt="Fotos da academia geral">
+                    <img src="images/gym-area-1.jpg" alt="Área de treino da Big Gym - foto 1">
+                    <img src="images/gym-area-2.jpg" alt="Área de treino da Big Gym - foto 2">
+                    <img src="images/gym-area-3.jpg" alt="Área de treino da Big Gym - foto 3">
+                    <img src="images/gym-area-4.jpg" alt="Área de treino da Big Gym - foto 4">
+                    <img src="images/gym-area-5.jpg" alt="Área de treino da Big Gym - foto 5">
+                    <img src="images/gym-area-6.jpg" alt="Área de treino da Big Gym - foto 6">
+                </div>
+            </div>
+        </section>
+
+        <section id="instrutores" class="section section-instrutores">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Nossa Equipe</p>
+                    <h2 class="section-title">Treinadores <span class="highlight">Especializados</span></h2>
+                    <p class="section-description">Profissionais certificados e apaixonados por transformar vidas
+                        através do esporte e da atividade física.
                     </p>
-                </article>
-                <article class="hours">
-                    <h3>Horário Flexível</h3>
-                    <p>Aberto em horários que cabem na sua rotina. De manhã cedo até a noite, sempre tem horário para
-                        você treinar.</p>
-                </article>
-                <article class="bairro">
-                    <h3>Instrutores Especializados</h3>
-                    <p>Aqui você não treina sozinho. Nossa equipe acompanha de perto cada aluno, corrige, orienta e
-                        motiva para que você evolua com segurança e resultado de verdade.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="alimentacao">
-            <div class="alimentacao-header">
-                <p class="section-subtitle">Exclusivo Big Gym</p>
-                <h2>Alimentação e Hidratação</h2>
-                <p>Aqui você não precisa sair da academia para se alimentar bem. Temos comidas fit congeladas e uma
-                    geladeira completa com tudo que você precisa.</p>
-            </div>
-
-            <div class="alimentacao-grid">
-                <div class="alimentacao-photo">
-                    <img src="images/fit-food.jpg" alt="">
-                    <div class="alimentacao-overlay">
-                        <p>1</p>
-                        <p>1</p>
-                        <p>1</p>
-                        <p>1</p>
-                    </div>
                 </div>
-
-                <div class="alimentacao-photo">
-                    <img src="images/gym-area-4.jpg" alt="">
-                    <div class="alimentacao-overlay">
-                        <p>1</p>
-                        <p>1</p>
-                        <p>1</p>
-                        <p>1</p>
-                    </div>
+                <div class="instrutores-grid">
+                    <article class="instrutor-card">
+                        <img src="images/trainer-1.jpg" alt="Instrutor de musculação da Big Gym - Foto 1">
+                        <h3 class="instrutor-nome">Nome instrutor 1</h3>
+                        <p class="instrutor-cargo">Cargo</p>
+                    </article>
+                    <article class="instrutor-card">
+                        <img src="images/trainer-2.jpg" alt="Instrutor de musculação da Big Gym - Foto 2">
+                        <h3 class="instrutor-nome">Nome instrutor 2</h3>
+                        <p class="instrutor-cargo">Cargo</p>
+                    </article>
+                    <article class="instrutor-card">
+                        <img src="images/trainer-3.jpg" alt="Instrutor de musculação da Big Gym - Foto 3">
+                        <h3 class="instrutor-nome">Nome instrutor 3</h3>
+                        <p class="instrutor-cargo">Cargo</p>
+                    </article>
                 </div>
             </div>
-
         </section>
 
-        <section id="estrutura">
-            <p class="section-subtitle">Conheça o Espaço</p>
-            <h2>Nossa estrutura</h2>
-            <p>Uma academia de bairro com tudo que você precisa para evoluir na musculação. Confira nosso espaço. </p>
-            <div class="estrutura-img">
-                <img src="images/hero-gym.jpg" alt="Fotos da academia geral">
-                <img src="images/gym-area-1.jpg" alt="Fotos da academia geral">
-                <img src="images/gym-area-2.jpg" alt="Fotos da academia geral">
-                <img src="images/gym-area-3.jpg" alt="Fotos da academia geral">
-                <img src="images/gym-area-4.jpg" alt="Fotos da academia geral">
-                <img src="images/gym-area-5.jpg" alt="Fotos da academia geral">
-                <img src="images/gym-area-6.jpg" alt="Fotos da academia geral">
+        <section id="planos" class="section section-planos">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Escolha seu Plano</p>
+                    <h2 class="section-title">Nossos <span class="highlight">Planos</span></h2>
+                </div>
+                <div class="planos-grid">
+                    <article class="plano-card">
+                        <h3 class="plano-titulo">Plano Mensal</h3>
+                        <p class="plano-preco"><strong>R$ 120,00</strong>/mês</p>
+                        <ul class="plano-beneficios">
+                            <li>Acesso a toda área de musculação</li>
+                            <li>Horário livre</li>
+                            <li>Sem fidelidade</li>
+                            <li>Avaliação física inclusa</li>
+                        </ul>
+                        <a href="#localizacao" class="btn btn-primary">Escolher Plano</a>
+                    </article>
+
+                    <article class="plano-card destaque-plano">
+                        <span class="plano-badge">Mais Vendido</span>
+                        <h3 class="plano-titulo">Plano Semestral</h3>
+                        <p class="plano-preco"><strong>R$ 95,00</strong>/mês</p>
+                        <ul class="plano-beneficios">
+                            <li>Acesso a toda área de musculação</li>
+                            <li>Horário livre</li>
+                            <li>6 meses de compromisso</li>
+                            <li>Avaliação física inclusa</li>
+                            <li>Desconto na loja fit</li>
+                        </ul>
+                        <a href="#localizacao" class="btn btn-primary">Escolher Plano</a>
+                    </article>
+
+                    <article class="plano-card">
+                        <h3 class="plano-titulo">Plano Anual</h3>
+                        <p class="plano-preco"><strong>R$ 89,90</strong>/mês</p>
+                        <ul class="plano-beneficios">
+                            <li>Acesso a toda área de musculação</li>
+                            <li>Horário livre</li>
+                            <li>12 meses de compromisso</li>
+                            <li>Avaliação física inclusa</li>
+                            <li>Desconto na loja fit</li>
+                            <li>Camiseta Big Gym grátis</li>
+                        </ul>
+                        <a href="#localizacao" class="btn btn-primary">Escolher Plano</a>
+                    </article>
+                </div>
             </div>
         </section>
 
-        <section id="instrutores">
-            <p class="section-subtitle">Nossa Equipe</p>
-            <h2>Treinadores especializados</h2>
-            <p>Profissionais certificados e apaixonados por transformar vidas através do esporte e da atividade física.
-            </p>
-            <div class="instrutores-grid">
-                <article>
-                    <img src="images/trainer-1.jpg" alt="Instrutor de musculação da Big Gym">
-                    <p>Nome instrutor1</p>
-                    <p>Cargo</p>
-                </article>
-                <article>
-                    <img src="images/trainer-2.jpg" alt="Instrutor de musculação da Big Gym">
-                    <p>Nome instrutor2</p>
-                    <p>Cargo</p>
-                </article>
-                <article>
-                    <img src="images/trainer-3.jpg" alt="Instrutor de musculação da Big Gym">
-                    <p>Nome instrutor3</p>
-                    <p>Cargo</p>
-                </article>
+        <section id="feedback" class="section section-feedback">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Depoimentos</p>
+                    <h2 class="section-title">O que Nossos Alunos <span class="highlight">Dizem</span></h2>
+                    <p class="section-description">A opinião de quem treina na Big Gym todos os dias.</p>
+                </div>
+
+                <div class="feedback-carousel" aria-roledescription="carrossel">
+                    <button class="feedback-arrow feedback-arrow-prev" type="button"
+                        aria-label="Ver depoimentos anteriores" data-feedback="prev">‹</button>
+
+                    <div class="feedback-viewport">
+                        <div class="feedback-track">
+                            <article class="feedback-card">
+                                <blockquote class="feedback-quote">
+                                    <p>Sou aluna antiga e vejo a academia sempre melhorando. Equipamentos novos,
+                                        manutenção em dia e
+                                        aquele clima de família que só academia de bairro tem. Amo treinar aqui!</p>
+                                </blockquote>
+                                <p class="feedback-name">Juliana Costa</p>
+                                <p class="feedback-role">Aluna há 3 anos</p>
+                            </article>
+
+                            <article class="feedback-card">
+                                <blockquote class="feedback-quote">
+                                    <p>Procurei várias academias na região e a Big Gym tem o melhor custo-benefício
+                                        disparado.
+                                        Equipamentos
+                                        de qualidade, geladeira com whey pronto e marmitas incríveis.</p>
+                                </blockquote>
+                                <p class="feedback-name">Diego Ferreira</p>
+                                <p class="feedback-role">Aluno há 8 meses</p>
+                            </article>
+
+                            <article class="feedback-card">
+                                <blockquote class="feedback-quote">
+                                    <p>Comecei sem saber nada de musculação e hoje já treino com confiança graças ao
+                                        suporte dos
+                                        instrutores. A academia tem tudo que preciso, sem frescura, foco total no
+                                        treino!</p>
+                                </blockquote>
+                                <p class="feedback-name">Patricia Lima</p>
+                                <p class="feedback-role">Aluna há 1 ano e meio</p>
+                            </article>
+
+                            <article class="feedback-card">
+                                <blockquote class="feedback-quote">
+                                    <p>Melhor academia do bairro! Os equipamentos são muito bem cuidados e o ambiente é
+                                        muito motivador.
+                                        O
+                                        diferencial das comidas fit congeladas facilita demais minha dieta no dia a dia.
+                                    </p>
+                                </blockquote>
+                                <p class="feedback-name">Carlos Silva</p>
+                                <p class="feedback-role">Aluno há 2 anos</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <button class="feedback-arrow feedback-arrow-next" type="button"
+                        aria-label="Ver próximos depoimentos" data-feedback="next">›</button>
+                </div>
             </div>
         </section>
 
-        <section id="planos">
-            <h2>Nossos Planos</h2>
-            <div class="planos-grid">
-                <article>
-                    <h3>Plano Mensal</h3>
-                    <p class="preco">R$120,00</p>
-                    <ul>
-                        <li>Acesso a toda área de musculação</li>
-                        <li>Horário livre</li>
-                        <li>Sem fidelidade</li>
-                        <li>Avaliação física inclusa</li>
-                    </ul>
-                </article>
+        <section id="localizacao" class="section section-localizacao">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-subtitle">Venha nos Visitar</p>
+                    <h2 class="section-title">Comece sua <span class="highlight">Transformação</span> Hoje</h2>
+                    <p class="section-description">Faça uma aula avulsa por apenas R$20,00 e conheça de perto a
+                        estrutura da Big
+                        Gym. Estamos te esperando!
+                    </p>
+                </div>
 
-                <article>
-                    <h3>Plano Semestral</h3>
-                    <p class="preco">R$570,00</p>
-                    <ul>
-                        <li>Acesso a toda área de musculação</li>
-                        <li>Horário livre</li>
-                        <li>6 meses de compromisso</li>
-                        <li>Avaliação física inclusa</li>
-                        <li>Desconto na loja fit</li>
-                    </ul>
-                </article>
+                <div class="localizacao-grid">
+                    <div class="localizacao-info">
+                        <h3>Endereço</h3>
+                        <p>R. Evaristo João Heck, 325 - Espinheiros, Joinville - SC</p>
 
-                <article>
-                    <h3>Plano Anual</h3>
-                    <p class="preco">R$1078,80</p>
-                    <ul>
-                        <li>Acesso a toda área de musculação</li>
-                        <li>Horário livre</li>
-                        <li>12 meses de compromisso</li>
-                        <li>Avaliação física inclusa</li>
-                        <li>Desconto na loja fit</li>
-                        <li>Camiseta Big Gym grátis</li>
-                    </ul>
-                </article>
+                        <h3>Telefone / WhatsApp</h3>
+                        <p>(47) 99763-2226</p>
+
+                        <h3>Horários de funcionamento</h3>
+                        <p>Seg. a Sex.: 6h às 00h</p>
+                        <p>Sáb.: 11h às 16h</p>
+
+                        <a href="https://wa.me/5547996257959" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-primary">Fale conosco pelo WhatsApp</a>
+                    </div>
+                    <div class="localizacao-mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57228.416494702346!2d-48.855845137240614!3d-26.3013597160452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb3aa09e65f73%3A0x83562e08f14cd142!2sBig%20Gym%20Academia!5e0!3m2!1spt-BR!2sbr!4v1770290696368!5m2!1spt-BR!2sbr"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section id="feedback">
-            <p class="section-subtitle">Depoimentos</p>
-            <h2>O que Nossos Alunos Dizem</h2>
-            <p>A opinião de quem treina na Big Gym todos os dias.</p>
-            <article>
-                <blockquote>
-                    <p>Sou aluna antiga e vejo a academia sempre melhorando. Equipamentos novos, manutenção em dia e
-                        aquele clima de família que só academia de bairro tem. Amo treinar aqui!</p>
-                </blockquote>
-                <p>Juliana Costa</p>
-                <p>Aluna há 3 anos</p>
-            </article>
-            <article>
-                <blockquote>
-                    <p>Procurei várias academias na região e a Big Gym tem o melhor custo-benefício disparado.
-                        Equipamentos
-                        de qualidade, geladeira com whey pronto e marmitas incríveis.</p>
-                </blockquote>
-                <p>Diego Ferreira</p>
-                <p>Aluno há 8 meses</p>
-            </article>
-            <article>
-                <blockquote>
-                    <p>Comecei sem saber nada de musculação e hoje já treino com confiança graças ao suporte dos
-                        instrutores. A academia tem tudo que preciso, sem frescura, foco total no treino!</p>
-                </blockquote>
-                <p>Patricia Lima</p>
-                <p>Aluna há 1 ano e meio</p>
-            </article>
-            <article>
-                <blockquote>
-                    <p>Melhor academia do bairro! Os equipamentos são muito bem cuidados e o ambiente é muito motivador.
-                        O
-                        diferencial das comidas fit congeladas facilita demais minha dieta no dia a dia.</p>
-                </blockquote>
-                <p>Carlos Silva</p>
-                <p>Aluno há 2 anos</p>
-            </article>
-        </section>
-
-        <section id="localizacao">
-            <p class="section-subtitle">Venha nos Visitar</p>
-            <h2>Comece sua Transformação Hoje</h2>
-            <p>Faça uma aula avulsa por apenas R$20,00 e conheça de perto a estrutura da Big Gym. Estamos te esperando!
-            </p>
-            <article>
-                <h3>Endereço</h3>
-                <p>R. Evaristo João Heck, 325 - Espinheiros, Joinville - SC</p>
-                <h3>Telefone / Whatsapp</h3>
-                <p>(47) 99763-2226</p>
-                <h3>Horários de funcionamento</h3>
-                <p>Seg. a Sex.: 6h às 00h</p>
-                <p>Sáb.: 11h às 16h</p>
-            </article>
-            <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57228.416494702346!2d-48.855845137240614!3d-26.3013597160452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb3aa09e65f73%3A0x83562e08f14cd142!2sBig%20Gym%20Academia!5e0!3m2!1spt-BR!2sbr!4v1770290696368!5m2!1spt-BR!2sbr"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
-
-        <section id="contato">
-            <h2>Quer conhecer a academia? Fale com a gente</h2>
-            <a href="https://wa.me/5547996257959" target="_blank" rel="noopener noreferrer" class="whatsapp">Fale conosco pelo
-                WhatsApp</a>
         </section>
     </main>
     <footer>
