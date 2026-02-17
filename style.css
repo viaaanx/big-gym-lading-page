@@ -352,3 +352,34 @@ body {
 .highlight {
     color: #facc14;
 }
+
+.estrutura-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.estrutura-grid img{
+    width: 100%;
+    display: block;
+    height: 251px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    transform-origin: center;
+    will-change: transform;
+}
+
+.estrutura-card{
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.estrutura-grid img:hover {
+    transform: scale(1.05);
+}
+
+
+.section-estrutura .container{
+    max-width: 1300px;
+}
