@@ -45,7 +45,7 @@ body {
 }
 
 .section-hero {
-    background-image: url(hero-gym.png);
+    background-image: url(assets/hero/hero-gym.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -284,9 +284,13 @@ body {
     background-color: #141414;
 }
 
+.section-alimentacao .container{
+    max-width: 1600px;
+}
+
 .alimentacao-grid {
     display: grid;
-    grid-template-columns: repeat(2, 850px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     justify-content: center;
 }
@@ -382,4 +386,129 @@ body {
 
 .section-estrutura .container{
     max-width: 1300px;
+}
+
+.plano-card{
+    background-color: #141414;
+    border: 1px solid #292929;
+    border-radius: 5px;
+    padding: 40px;
+    min-height: 520px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.planos-grid{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    align-items: stretch;
+}
+
+.section-planos .container{
+    max-width: 1300px;
+}
+
+.plano-beneficios{
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    margin: 18px 0 0;
+}
+
+.plano-beneficios li{
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.plano-beneficios li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #facc14;
+}
+
+.plano-card .btn{
+    width: 100%;
+    margin-top: 20px;
+    min-width: 0;
+}
+
+.plano-preco {
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.plano-preco .valor{
+    font-family: "Oswald", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.plano-preco .periodo{
+    font-size: 14px;
+    color: #aaa;
+}
+
+.plano-card h3{
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 26px;
+}
+
+.destaque-plano{
+    background-color: #facc14;
+    color: black;
+    background: linear-gradient(90deg, rgba(250, 204, 20, 1) 0%, rgba(214, 176, 21, 1) 100%);
+    box-shadow: 0 10px 30px rgba(250, 204, 20, 0.2);
+}
+
+.destaque-plano li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: black;
+}
+
+.destaque-plano h3{
+    font-family: "Oswald", sans-serif;
+    color: black;
+}
+
+.destaque-plano .btn-primary{
+    color: #facc14;
+    background-color: black;
+}
+
+.destaque-plano .plano-preco .valor, .destaque-plano .plano-preco .periodo{
+    color: black;
+}
+
+.plano-badge{
+    font-size: 14px;
+    background-color: white;
+    font-family: "Oswald", sans-serif;;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 4px 16px;
+    position: absolute;
+    display: flex;
+    align-self: center;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
 }
