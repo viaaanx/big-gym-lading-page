@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -119,19 +123,19 @@ body {
     margin-bottom: 20px;
 }
 
-.icon-fire{
+.icon-fire {
     width: 18px;
     height: 18px;
     stroke: #facc14;
 }
 
-.section-diferencial-icon{
+.section-diferencial-icon {
     width: 22px;
     height: 22px;
     color: #facc14;
 }
 
-.icon-box{
+.icon-box {
     display: inline-flex;
     background-color: rgba(225, 212, 37, 0.158);
     padding: 8px;
@@ -257,7 +261,7 @@ body {
     border: 1px solid #292929;
 }
 
-.section-diferencial .container{
+.section-diferencial .container {
     max-width: 1300px;
 }
 
@@ -284,7 +288,7 @@ body {
     background-color: #141414;
 }
 
-.section-alimentacao .container{
+.section-alimentacao .container {
     max-width: 1600px;
 }
 
@@ -357,14 +361,14 @@ body {
     color: #facc14;
 }
 
-.estrutura-grid{
+.estrutura-grid {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
-.estrutura-grid img{
+.estrutura-grid img {
     width: 100%;
     display: block;
     height: 251px;
@@ -374,7 +378,7 @@ body {
     will-change: transform;
 }
 
-.estrutura-card{
+.estrutura-card {
     border-radius: 5px;
     overflow: hidden;
 }
@@ -384,11 +388,11 @@ body {
 }
 
 
-.section-estrutura .container{
+.section-estrutura .container {
     max-width: 1300px;
 }
 
-.plano-card{
+.plano-card {
     background-color: #141414;
     border: 1px solid #292929;
     border-radius: 5px;
@@ -402,25 +406,25 @@ body {
 
 }
 
-.planos-grid{
+.planos-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 15px;
     align-items: stretch;
 }
 
-.section-planos .container{
+.section-planos .container {
     max-width: 1300px;
 }
 
-.plano-beneficios{
+.plano-beneficios {
     flex: 1;
     list-style: none;
     padding: 0;
     margin: 18px 0 0;
 }
 
-.plano-beneficios li{
+.plano-beneficios li {
     position: relative;
     padding-left: 22px;
     margin-bottom: 8px;
@@ -435,7 +439,7 @@ body {
     color: #facc14;
 }
 
-.plano-card .btn{
+.plano-card .btn {
     width: 100%;
     margin-top: 20px;
     min-width: 0;
@@ -447,7 +451,7 @@ body {
     align-items: flex-end;
 }
 
-.plano-preco .valor{
+.plano-preco .valor {
     font-family: "Oswald", sans-serif;
     font-size: 42px;
     font-weight: 700;
@@ -455,19 +459,19 @@ body {
     line-height: 1;
 }
 
-.plano-preco .periodo{
+.plano-preco .periodo {
     font-size: 14px;
     color: #aaa;
 }
 
-.plano-card h3{
+.plano-card h3 {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     color: white;
     font-size: 26px;
 }
 
-.destaque-plano{
+.destaque-plano {
     background-color: #facc14;
     color: black;
     background: linear-gradient(90deg, rgba(250, 204, 20, 1) 0%, rgba(214, 176, 21, 1) 100%);
@@ -482,24 +486,26 @@ body {
     color: black;
 }
 
-.destaque-plano h3{
+.destaque-plano h3 {
     font-family: "Oswald", sans-serif;
     color: black;
 }
 
-.destaque-plano .btn-primary{
+.destaque-plano .btn-primary {
     color: #facc14;
     background-color: black;
 }
 
-.destaque-plano .plano-preco .valor, .destaque-plano .plano-preco .periodo{
+.destaque-plano .plano-preco .valor,
+.destaque-plano .plano-preco .periodo {
     color: black;
 }
 
-.plano-badge{
+.plano-badge {
     font-size: 14px;
     background-color: white;
-    font-family: "Oswald", sans-serif;;
+    font-family: "Oswald", sans-serif;
+    ;
     text-transform: uppercase;
     text-align: center;
     border-radius: 5px;
@@ -511,4 +517,83 @@ body {
     top: -12px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.section-instrutores .container {
+    max-width: 1300px;
+}
+
+.instrutores-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.instrutor-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2a2a2a;
+    background: #111;
+    min-height: 520px;
+    transition: transform .2s ease, border-color .2s ease;
+}
+
+.instrutor-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(250, 204, 20, .6);
+}
+
+.instrutor-card img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    display: block;
+    filter: contrast(1.05) brightness(.92);
+}
+
+.instrutor-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    z-index: 1;
+    background: linear-gradient(to top,
+            #111 0%,
+            rgba(17, 17, 17, .95) 18%,
+            rgba(17, 17, 17, .70) 35%,
+            rgba(17, 17, 17, .35) 55%,
+            rgba(17, 17, 17, .10) 70%,
+            rgba(17, 17, 17, 0) 98%),
+        radial-gradient(circle at 50% 40%,
+            rgba(0, 0, 0, 0) 45%,
+            rgba(0, 0, 0, .35) 100%);
+}
+
+.instrutor-nome,
+.instrutor-cargo {
+    position: absolute;
+    left: 18px;
+    z-index: 2;
+    margin: 0;
+}
+
+.instrutor-nome {
+    bottom: 56px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ddd;
+    letter-spacing: .5px;
+}
+
+.instrutor-cargo {
+    bottom: 30px;
+    font-size: 13px;
+    color: #facc14;
+}
+
+.section-instrutores {
+    background-color: #141414;
 }
